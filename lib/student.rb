@@ -8,7 +8,7 @@ class Student
     #@name = student_hash[:name]
     #@location = student_hash[:location]
     student_hash.each do |key, value|
-    self.send("#{key}=", value)
+      self.send("#{key}=", value)
     end
     @@all << self
   end
@@ -20,7 +20,8 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-
+    attributes_hash.each do |key, value|
+      
   end
 
   def self.all
