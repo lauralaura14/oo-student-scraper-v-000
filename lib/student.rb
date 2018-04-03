@@ -9,7 +9,7 @@ class Student
     #@location = student_hash[:location]
     student_hash.each do |key, value|
     self.send("#{key}=" , value)
-  end
+    end
     @@all << self
   end
 
